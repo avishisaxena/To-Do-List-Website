@@ -12,7 +12,7 @@ app.set('view engine', 'ejs');
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
-// mongodb+srv://prabhav:mynameiskhan@cluster1.x0vvpga.mongodb.net/toDolistDb2  
+ 
 mongoose.connect("mongodb+srv://sample01:mynameiskhan1@cluster1.kq1qbar.mongodb.net/toDolistDb", {useNewUrlParser:true , useUnifiedTopology:true})
 .then( ()=> console.log("success") )
 .catch((err) => console.log(err));
